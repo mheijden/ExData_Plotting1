@@ -1,7 +1,10 @@
 # Added files: 
 dataPrep.R  
+
 plot1 - 4 .R
+
 plot1 - 4.png
+
 The Rfiles plot1 through 4 create the pngFiles plot1 through 4
 
 
