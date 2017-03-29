@@ -1,0 +1,6 @@
+hhp<-read.csv("household_power_consumption.txt", sep=";",na.strings = "?")
+hhp$Date<-strptime(hhp$Date,"%d/%m/%Y")
+hhps<-subset(hhp,Date>"2007-01-31" & Date <"2007-02-03")
+hhps$tstmp<-paste(hhps$Date,hhps$Time,sep=" ")
+hhps$tstmp<-strptime(paste(hhps$Date,hhps$Time,sep=" "),"%Y-%m-%d %H:%M:%S")
+str(hhps)
